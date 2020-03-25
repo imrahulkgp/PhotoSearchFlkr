@@ -14,6 +14,9 @@
 		B70E380D242B80000074F572 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B70E380B242B80000074F572 /* LaunchScreen.storyboard */; };
 		B70E3818242B80000074F572 /* PhotoSearchFlkrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70E3817242B80000074F572 /* PhotoSearchFlkrTests.swift */; };
 		B70E3823242B80000074F572 /* PhotoSearchFlkrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70E3822242B80000074F572 /* PhotoSearchFlkrUITests.swift */; };
+		B70E3831242B98B60074F572 /* ImageDisplayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70E3830242B98B60074F572 /* ImageDisplayCollectionViewCell.swift */; };
+		B70E3833242B99CD0074F572 /* FlickrSearchDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70E3832242B99CD0074F572 /* FlickrSearchDataModel.swift */; };
+		B70E3835242B9F0A0074F572 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70E3834242B9F0A0074F572 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		B70E381E242B80000074F572 /* PhotoSearchFlkrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoSearchFlkrUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B70E3822242B80000074F572 /* PhotoSearchFlkrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSearchFlkrUITests.swift; sourceTree = "<group>"; };
 		B70E3824242B80000074F572 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B70E3830242B98B60074F572 /* ImageDisplayCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDisplayCollectionViewCell.swift; sourceTree = "<group>"; };
+		B70E3832242B99CD0074F572 /* FlickrSearchDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrSearchDataModel.swift; sourceTree = "<group>"; };
+		B70E3834242B9F0A0074F572 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +105,13 @@
 			children = (
 				B70E3800242B7FFE0074F572 /* AppDelegate.swift */,
 				B70E3804242B7FFE0074F572 /* HomeViewController.swift */,
+				B70E3834242B9F0A0074F572 /* HomeViewModel.swift */,
 				B70E3806242B7FFE0074F572 /* Main.storyboard */,
 				B70E3809242B80000074F572 /* Assets.xcassets */,
 				B70E380B242B80000074F572 /* LaunchScreen.storyboard */,
 				B70E380E242B80000074F572 /* Info.plist */,
+				B70E3830242B98B60074F572 /* ImageDisplayCollectionViewCell.swift */,
+				B70E3832242B99CD0074F572 /* FlickrSearchDataModel.swift */,
 			);
 			path = PhotoSearchFlkr;
 			sourceTree = "<group>";
@@ -258,6 +267,9 @@
 			files = (
 				B70E3805242B7FFE0074F572 /* HomeViewController.swift in Sources */,
 				B70E3801242B7FFE0074F572 /* AppDelegate.swift in Sources */,
+				B70E3833242B99CD0074F572 /* FlickrSearchDataModel.swift in Sources */,
+				B70E3835242B9F0A0074F572 /* HomeViewModel.swift in Sources */,
+				B70E3831242B98B60074F572 /* ImageDisplayCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
