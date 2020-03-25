@@ -97,10 +97,14 @@ extension HomeViewController: HomeViewModelDelegate {
 }
 
 extension HomeViewController: UISearchBarDelegate {
-    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        searchBar.resignFirstResponder()
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if let txt = searchBar.text, txt.isEmpty || searchBar.text == nil {
+            viewModel.resetModel()
+            collectionView.reloadData()
+            searchBar.resignFirstResponder()
+        }
     }
-
+    
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         if let searchStr = searchBar.text, !searchStr.isEmpty {
             self.showActivityIndicator()

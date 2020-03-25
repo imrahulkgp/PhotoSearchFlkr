@@ -21,8 +21,7 @@ class HomeViewModel {
     
     func fetchImages(withTag tag: String) {
         if let str = searchStr, str != tag {
-            photoList = []
-            page = 0
+            resetModel()
         }
         page += 1
         let dict:[String: Any] = [APIHelper.method: APIHelper.methodVal,
@@ -55,5 +54,10 @@ class HomeViewModel {
                 self?.delegate?.failedToGetData()
             }
         }
+    }
+    
+    func resetModel() {
+        photoList = []
+        page = 0
     }
 }
